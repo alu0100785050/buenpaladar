@@ -191,6 +191,8 @@ header.masthead .page-heading,header.masthead .post-heading,header.masthead .sit
 	color:#fff
 }
 
+header.masthead .container .row .col-lg-8.col-md-10.mx-auto .page-heading{}
+
 @media only screen and (min-width:768px) {
 	header.masthead .page-heading,header.masthead .post-heading,header.masthead .site-heading {
 		padding:200px 0
