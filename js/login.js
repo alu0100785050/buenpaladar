@@ -7,17 +7,6 @@ function validate(){
     }
     else{
         location.reload(true);      //Refresh page
-        /*
-        attempt --;// Decrementing by one.
-        alert("You have "+attempt+" ");
 
-        // Disabling fields after 3 attempts.
-        if( attempt == 0){
-            document.getElementById("username").disabled = true;
-            document.getElementById("password").disabled = true;
-            document.getElementById("submit").disabled = true;
-
-            return false;
-        }*/
     }
 }
