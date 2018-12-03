@@ -24,11 +24,12 @@ div.pepi{
 
 div.main{
     width: 300px;
-    padding: 10px 50px 25px;
+    padding: 10px 40px 25px;
     border: 2px solid gray;
     border-radius: 10px;
     font-family: raleway;
     margin:auto;
+    overflow:auto;
 }
 
 input[type=text],input[type=password]{
@@ -78,12 +79,29 @@ input[type=button]{
     color: #4E4D4B;
     font-weight: bold;
     cursor: pointer;
-    width: 100%;
+    width: 50%;
     border-radius: 5px;
     padding: 10px 0;
     outline:none;
+    float:right;
 }
 
 input[type=button]:hover{
     background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
+}
+
+span.small-link{
+    position:relative;
+    vertical-align:bottom;
+    color:#ffbc00;
+}
+
+span.small-link:hover{
+    color:black;
+    background-color:transparent;
+    text-decoration:underline;
+}
+
+span.small-link:link{
+    color:#ffbc00;
 }
