@@ -24,6 +24,8 @@
 
     <!-- Javascript files -->
     <script src="../js/login.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js">
+    </script>
 
   </head>
 
@@ -49,6 +51,15 @@
                 <input type="text" name="username" id="username"/>
                 <label>Password:</label>
                 <input type="password" name="password" id="password"/>
+                <script type="text/javascript">
+                       $('#password').keypress(function(event){
+                            var keycode = (event.keyCode ? event.keyCode : event.which);
+                            if(keycode == '13'){
+                                validate();
+                            }
+                            event.stopPropagation();
+                       });
+                </script>
                 <a><font size="2"><span class="small-link" href="index.html">Crea una cuenta</span></font></a>
                 <input type="button" value="Login" id="submit" onclick="validate()"/>
                 </form>
