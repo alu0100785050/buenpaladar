@@ -7,6 +7,5 @@ function validate(){
     }
     else{
         location.reload(true);      //Refresh page
-
     }
 }

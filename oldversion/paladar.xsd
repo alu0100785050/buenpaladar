@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name='BDD' type='tns:recetario'/>
+	<xs:complexType name="recetario">
+		<xs:sequence>
+			<xs:complexType name="receta">
+				<xs:sequence>
+					<xs:element name="autor" type="xs:string"/>
+					<xs:element name="numPers" type="xs:integer"/>
+					<xs:complexType name="ingredientes">
+						<xs:complexType name="elemento">
+							<xs:sequence>
+								<xs:element name="ingrediente" type="xs:string"/>
+								<xs:element name="cantidad" type="xs:string"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:complexType>
+					<xs:complexType name="elaboracion">
+						<xs:sequence>
+							<xs:element name="paso" type="string"/>
+						</sequence>
+					</xs:complexType>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

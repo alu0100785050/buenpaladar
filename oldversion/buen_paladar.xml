@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="buenpaladar.xsl"?>
+
+
+<BDD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="paladar.xsd" nombre="El Buen Paladar">
+
+	<recetario>
+		<receta nombre="Parrillada argentina">
+			<autor>Carmen Rosa</autor>
+			<numPers>5 pers</numPers>
+			<ingredientes>
+					<elemento>
+					    <ingrediente>Filete de res</ingrediente>
+					    <cantidad>1 kg</cantidad>
+					</elemento>
+					<elemento>
+				        <ingrediente>Chorizo adobado</ingrediente>
+				        <cantidad>1/2 kg</cantidad>
+				    </elemento>
+				    <elemento>
+				        <ingrediente>Sal marina</ingrediente>
+				        <cantidad>5 cucharadas (75 g)</cantidad>
+				    </elemento>
+					<elemento>
+					    <ingrediente>Cerveza pilsen</ingrediente>
+					    <cantidad>1 botella(355mL)</cantidad>
+					</elemento>
+			</ingredientes>
+			<elaboracion>
+			    <paso>- En primer lugar, cortar la carne en trozos.</paso>
+                <paso>- Luego, suavizar la carne con varios golpes de martillo.</paso>
+                <paso>- Cuando la carne esté ya suavizada, colocarla en un plato.</paso>
+                <paso>- Después salar la carne.</paso>
+                <paso>- Añadir, poco a poco, la cerveza.</paso>
+                <paso>- Se debe dejar reposar durante 2 horas aproximadamente.</paso>
+                <paso>- Por otro lado, hay que comenzar a calentar la parrilla con carbón y tenerla lista, solo de integrar los ingredientes.</paso>
+                <paso>- Luego de que pase el tiempo de reposo, se procede a asar la carne en base al término de cocción deseado (lo más recomendable sería, cocerla al menos durante 20 minutos).</paso>
+                <paso>- Junto con la carne de res, asar el chorizo por un intervalo de tiempo entre 7 y 10 minutos.</paso>
+                <paso>- Retirar del fuego y finalmente, servir.</paso>
+			</elaboracion>
+		</receta>
+		
+		<receta nombre="Pollo frito">
+			<autor>Carmen Rosa</autor>
+			<numPers>4 pers</numPers>
+			<ingredientes>
+			    <elemento>
+			        <ingrediente>muslos de pollo</ingrediente>
+			        <cantidad>500 g</cantidad>
+			    </elemento>
+			    <elemento>
+			        <ingrediente>cebolla</ingrediente>
+			        <cantidad>1 pieza</cantidad>
+			    </elemento>
+			    <elemento>
+			        <ingrediente>ajo</ingrediente>
+                    <cantidad>1-2 dientes</cantidad>
+			    </elemento>
+			    <elemento>
+			        <ingrediente>pimiento</ingrediente>
+			        <cantidad>1 pieza</cantidad>
+			    </elemento>
+			    <elemento>
+			        <ingrediente>harina</ingrediente>
+			        <cantidad>1 plato</cantidad>
+			    </elemento>
+			    <elemento>
+			        <ingrediente>huevo</ingrediente>
+			        <cantidad>2</cantidad>
+			    </elemento>
+			    <elemento>
+			        <ingrediente>salsa barbacoa</ingrediente>
+			        <cantidad>Un poco</cantidad>
+			    </elemento>
+			    <elemento>
+			        <ingrediente>sal</ingrediente>
+			        <cantidad>Una cucharada</cantidad>
+			    </elemento>
+			    <elemento>
+			        <ingrediente>pimienta</ingrediente>
+	                <cantidad>Un poco</cantidad>
+			    </elemento>
+			    <elemento>
+			        <ingrediente>pimenton</ingrediente>
+			        <cantidad>Una cantidad generosa</cantidad>
+			    </elemento>
+			    <elemento>
+			        <ingrediente>polvo de curry</ingrediente>
+			        <cantidad>Un poco</cantidad>
+			    </elemento>
+			</ingredientes>
+			<elaboracion>
+			    <paso>- Preparar los vegetales primero: picar la cebolla y el pimiento en piezas pequeñas y añadir un diente de ajo machacado todo a un mismo bol.</paso>
+			    <paso>- Prerarar un plato con un fondo de harina y otro hondo con tres huevos batidos.</paso> 
+			    <paso>- Sazonar el pollo con sal y pimienta y espolvorearlos con pimenton y una pizca de polvos de curry por trozo de pollo.</paso>
+			    <paso>- Prerarar una sartén con suficiente aceite como para poner a sofreir la verdura y pasar el pollo consecutivamente por el huevo, la harina y, posteriormente, ponerlo
+			    a freír durante unos 4-5 minutos hasta que dore.</paso>
+			    <paso>- Cuando la cebolla del sofrito de verduras este dorada, retirarlo de la sarten y escurrir el aceite. Hacer lo propio con el pollo una vez frito y emplatar.</paso>
+			    <paso>- Guarnicionar al gusto y añadir la salsa barbacoa para acompañar al pollo para disfrutar del auténtico sabor a pollo frito.</paso>
+			</elaboracion>
+		</receta>
+		
+		<receta nombre="Paella">
+			<autor>Carmen Rosa</autor>
+			<numPers>4 pers</numPers>
+			<ingredientes>
+				 <elemento>
+				     <ingrediente>cebolla picada</ingrediente>
+				     <cantidad>1 pieza</cantidad>
+				 </elemento>
+				 <elemento>
+				     <ingrediente>aceite de oliva virgen</ingrediente>
+				     <cantidad>5 cucharadas</cantidad>
+				 </elemento>
+				 <elemento>
+				     <ingrediente>ajo</ingrediente>
+				     <cantidad>2 dientes</cantidad>
+				 </elemento>
+				 <elemento>
+				     <ingrediente>tomate, pelado y picado</ingrediente>
+				     <cantidad>2 piezas</cantidad>
+				 </elemento>
+				 <elemento>
+				     <ingrediente>azúcar</ingrediente>
+				     <cantidad>1/2 cucharadita</cantidad>
+				 </elemento>
+				 <elemento>
+				     <ingrediente>sal</ingrediente>
+				     <cantidad>Cantidad arbitraria</cantidad>
+				 </elemento>
+				 <elemento>
+				     <ingrediente>pimentón</ingrediente>
+				     <cantidad>1 cucharadita</cantidad>
+				 </elemento>
+				 <elemento>
+				     <ingrediente>azafrán</ingrediente>
+				     <cantidad>Unas hebras</cantidad>
+				 </elemento>
+				<elemento>
+			        <ingrediente>calamares pequeños, limpios</ingrediente>
+			        <cantidad>4</cantidad>
+			    </elemento>
+			    <elemento>
+			        <ingrediente>arroz bomba</ingrediente>
+			        <cantidad>2 tazas</cantidad>
+			    </elemento>
+			    <elemento>
+			        <ingrediente>caldo de pescado</ingrediente>
+			        <cantidad>3 tazas</cantidad>
+			    </elemento>
+			    <elemento>
+			        <ingrediente>vino blanco</ingrediente>
+			        <cantidad>250mL</cantidad>
+			    </elemento>
+			    <elemento>
+			        <ingrediente>gambas jumbo cocidas(sin pelar)</ingrediente>
+			        <cantidad>Una docena</cantidad>
+			    </elemento>
+			    <elemento>
+			        <ingrediente>mejillones, limpios</ingrediente>
+			        <cantidad>16</cantidad>
+			    </elemento>
+			</ingredientes>
+			<elaboracion>
+			    <paso>- Empezamos haciendo el sofrito. Para ello frímos la cebolla bien picada en el aceite caliente. Removemos la cebolla
+			    con una cuchara de madera frecuentemente, para que no se queme y lo dejamos hasta que comience a tomar color</paso>
+			    <paso>- En ese momento, añadimos el ajo bien picado y, antes de que empiece a tomar color, incorporamos los tomates también picados</paso>
+			    <paso>- Agregamos el azúcar, sal a nuestro gusto, el pimentón y unas hebras de azafán</paso>
+			    <paso>- Revolvemos todos los ingredientes y dejamos que se sofrían hasta que los tomates reduzcan</paso>
+			    <paso>- Cortar los calamares en aros (las patas enteras). Añadimos el calamar y lo dejamos cocinar durante unos minutos</paso>
+			    <paso>- Incorporamos el arroz y lo distribuimos por toda la paellera para que los granos se adhieran a los ingredientes</paso>
+                <paso>- Calentamos el caldo y el vino a parte y lo vertemos caliente en la paella</paso>
+                <paso>- Aumentamos la temperatura y añadimos más sal</paso>
+                <paso>- Removemos todo y cuando llegue a ebullición, bajamos la temperatura y dejamos reposar de 18 a 20 minutos</paso>
+			    <paso>- Es importante que durante la cocción vayamos moviendo la paellera por toda la superficie de cocción</paso>
+	            <paso>- Tras 10 minutos de cocción, incorporamos las gambas cocidas hasta que se cuezan por arriba. Darles la vuelta después.</paso>
+			    <paso>- Si parece muy seco, vertemos un poco más de caldo hacia el final de la cocción</paso>
+			    <paso>- Tras los 20 minutos, probamos el arroz y, si está bien hecho, lo tapamos con papel de aluminio</paso>
+			    <paso>- Cocemos los mejillones al vapor con un dedo de agua y desechamos los que no se abran. Ponemos los buenos sobre la paella.</paso>
+			    <paso>- Servimos tras 5 minutos de reposo</paso>
+			</elaboracion>
+		</receta>
+		
+		<receta nombre="Falafel">
+			<autor>Carmen Rosa</autor>
+			<numPers>4 pers</numPers>
+			<ingredientes>
+			    <elemento>
+			        <ingrediente>garbanzos o habas secas peladas</ingrediente>
+			        <cantidad>Medio kilo</cantidad>
+			    </elemento>
+			    <elemento>
+			        <ingrediente>cebolla picada</ingrediente>
+			        <cantidad>2/3</cantidad>
+			    </elemento>
+			    <elemento>
+			        <ingrediente>perejil fresco</ingrediente>
+			        <cantidad>1/2</cantidad>
+			    </elemento>
+			     <elemento>
+			        <ingrediente>taza de cilantro</ingrediente>
+			        <cantidad>1/2</cantidad>
+			    </elemento>
+			     <elemento>
+			        <ingrediente>dientes de ajo</ingrediente>
+			        <cantidad>3</cantidad>
+			    </elemento>
+			     <elemento>
+			        <ingrediente>comino molido</ingrediente>
+			        <cantidad>2 cucharaditas</cantidad>
+			    </elemento>
+			     <elemento>
+			        <ingrediente>pan rallado o harina</ingrediente>
+			        <cantidad>1 taza</cantidad>
+			    </elemento>
+			     <elemento>
+			        <ingrediente>bicarbonato o levadura en polvo</ingrediente>
+			        <cantidad>1 cucharada</cantidad>
+			    </elemento>
+			     <elemento>
+			        <ingrediente>sal</ingrediente>
+			        <cantidad>1 cucharadita</cantidad>
+			    </elemento>
+			     <elemento>
+			        <ingrediente>pimienta negra</ingrediente>
+			        <cantidad>1 pizca</cantidad>
+			    </elemento>
+			     <elemento>
+			        <ingrediente>cayena molida</ingrediente>
+			        <cantidad>1/2 cucharadita</cantidad>
+			    </elemento>
+			     <elemento>
+			        <ingrediente>aceite para freir</ingrediente>
+			        <cantidad>Un poco</cantidad>
+			    </elemento>
+			</ingredientes>
+			<elaboracion>
+			    <paso>Lavar con agua y escurrir los garbanzos o habas dejados en remojo la noche anterior.</paso>
+			    <paso>Triturar directamente los garbanzos “sin cocer” o habas con la batidora o picadora junto con las cebollas, los ajos, el perejil, el cilantro fresco y una taza de agua. Mezcle hasta conseguir una textura espesa.</paso>
+			    <paso>Añadir la sal, el comino molido, la pimienta negra, la cayena (opcional) , el bicarbonato y mezclar un poco. Dejar reposar la mezcla durante 30 minutos.</paso>
+			    <paso>Forme con la mezcla pequeñas bolas o mini hamburguesas, del tamaño de una pelota de ping pong.  Aplastelas un poco. Si la mezcla le queda demasiado húmeda por lo que le es dificil formar bolitas, se puede añadir un poco de pan rallado o harina de trigo.</paso>
+			    <paso>Freír en abundante aceite de oliva a fuego medio/fuerte hasta que le queden dorados (5-7 minutos). Servir caliente.</paso>
+			</elaboracion>
+		</receta>
+
+	</recetario>
+
+</BDD>
