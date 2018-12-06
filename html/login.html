@@ -10,6 +10,11 @@
 
     <title>El Buen Paladar</title>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous">
+    </script>
+
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -21,11 +26,6 @@
     <!-- Custom styles for this template -->
     <link href="../css/clean-blog.min.css" rel="stylesheet">
     <link href="../css/login-styles.css" rel="stylesheet">
-
-    <!-- Javascript files -->
-    <script src="../js/login.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js">
-    </script>
 
   </head>
 
@@ -51,17 +51,8 @@
                 <input type="text" name="username" id="username"/>
                 <label>Contraseña:</label>
                 <input type="password" name="password" id="password"/>
-                <script type="text/javascript">
-                       $('#password').keypress(function(event){
-                            var keycode = (event.keyCode ? event.keyCode : event.which);
-                            if(keycode == '13'){
-                                validate();
-                            }
-                            event.stopPropagation();
-                       });
-                </script>
-                <a><font size="2"><span class="small-link" href="index.html">Crea una cuenta</span></font></a>
-                <input type="button" value="Login" id="submit" onclick="validate()"/>
+                <a href="sign_up.html"><font size="2"><span class="small-link">Crea una cuenta</span></font></a>
+                <input type="button" value="Login" id="submit"/>
                 </form>
               </div>
             </div>
@@ -108,6 +99,14 @@
     </footer>
   </div>
 
+    <!-- Firebase integration -->
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+    <script src="../js/login.js">
+    </script>
+    <script type="text/javascript" src="../js/enter-recognition.js">
+    </script>
+
+
     <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -118,6 +117,11 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/clean-blog.min.js"></script>
+    <script src="../js/login.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js">
+    </script>
+
+
 
   </body>
 
