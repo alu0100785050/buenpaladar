@@ -48,12 +48,14 @@
               <!--CONTROL DE FORMULARIO-->
               <h2 style="color: black">Iniciar Sesión</h2>
                 <form id="form_id" method="post" name="myform">
+
                 <label>Correo electrónico:</label>
-                <input type="text" name="username" id="username"/>
+                <input type="text" name="username" id="email"/>
                 <label>Contraseña:</label>
                 <input type="password" name="password" id="password"/>
+
                 <a href="sign_up.html"><font size="2"><span class="small-link">Crea una cuenta</span></font></a>
-                <input type="button" value="Login" id="submit"/>
+                <input type="button" value="Login" id="submit" onclick="validate()"/>
                 </form>
               </div>
             </div>
@@ -101,28 +103,41 @@
   </div>
 
     <!-- Firebase integration -->
-    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
-    <script src="../js/login.js">
-    </script>
-    <script type="text/javascript" src="../js/enter-recognition.js">
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+    <script>
+    var config = {
+      apiKey: "AIzaSyCrXSZWpBdn8HTiwEEySQ9Q4r4ZOE5jwIU",
+      authDomain: "practicasipc-e2448.firebaseapp.com",
+      databaseURL: "https://practicasipc-e2448.firebaseio.com",
+      projectId: "practicasipc-e2448",
+      storageBucket: "practicasipc-e2448.appspot.com",
+      messagingSenderId: "110438816831"
+    };
+    firebase.initializeApp(config);
     </script>
 
+    <!--<script>
+        firebase.auth().onAuthStatChanged(firebaseUser => {
+            if(firebaseUser){
+                console.log(firebaseUser);
+            }else{
+            console.log('Not logged in');
+            }
+        });
+    </script>-->
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js">
+    </script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
     <!-- Custom scripts for this template -->
-    <script src="js/clean-blog.min.js"></script>
+    <!--<script src="js/clean-blog.min.js"></script>-->
     <script src="../js/login.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js">
+    <script type="text/javascript" src="../js/enter-recognition.js">
     </script>
-
-
 
   </body>
 

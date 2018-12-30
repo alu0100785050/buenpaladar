@@ -5,29 +5,36 @@ function validateEmail(email) {
 
 function validate(){
 
-    var config = {
-      apiKey: "AIzaSyCrXSZWpBdn8HTiwEEySQ9Q4r4ZOE5jwIU",
-      authDomain: "practicasipc-e2448.firebaseapp.com",
-      databaseURL: "https://practicasipc-e2448.firebaseio.com",
-      projectId: "practicasipc-e2448",
-      storageBucket: "practicasipc-e2448.appspot.com",
-      messagingSenderId: "110438816831"
-    };
-    firebase.initializeApp(config);
+    var email = document.getElementById("email");
+    var password = document.getElementById("password");
 
-    const btnLogin = document.getElementById('submit');
+    if(validateEmail(email.value)){
+        const auth = firebase.auth();
 
-    btnLogin.addEventListener('click', e =>{
+        auth.signInWithEmailAndPassword(email.value,password.value).catch(function(error){
+            //Handle errors
 
-        const email= document.getElementById('username').value;
-        const pass= document.getElementById('password').value;
-        const auth= firebase.auth();
+            var errorCode = error.code;
+            var errorMessage = error.message;
 
-        const promise = auth.signInWithEmailAndPassword(email,pass);
-        promise.catch(e =>alert('Error message: '+ e.message));
+            console.log('Error: ' + errorCode + ', ' + errorMessage);
 
+            email.style.color = "coral";
+            password.style.color = "coral";
+        });
+
+        console.log("Login successful!");
+        //TODO: Do stuff after login successful
+    }
+    else{
+        email.style.color = "coral";
+        password.style.color = "coral";
+        password.value = '';
+    }
+
+    password.addEventListener('click', e => {
+        document.getElementById('password').value = '';
     });
-
 }
 
-validate();
+
