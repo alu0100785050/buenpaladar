@@ -11,7 +11,11 @@ function validate(){
     if(validateEmail(email.value)){
         const auth = firebase.auth();
 
-        auth.signInWithEmailAndPassword(email.value,password.value).catch(function(error){
+        auth.signInWithEmailAndPassword(email.value,password.value).then(function(){
+            console.log("Login successful!");
+            window.location.href = "../html/index.html"
+
+        }).catch(function(error){
             //Handle errors
 
             var errorCode = error.code;
@@ -23,8 +27,6 @@ function validate(){
             password.style.color = "coral";
         });
 
-        console.log("Login successful!");
-        //TODO: Do stuff after login successful
     }
     else{
         email.style.color = "coral";
@@ -36,5 +38,3 @@ function validate(){
         document.getElementById('password').value = '';
     });
 }
-
-
