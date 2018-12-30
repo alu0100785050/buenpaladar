@@ -1,0 +1,328 @@
+[debug] [2018-12-30T19:44:24.973Z] ----------------------------------------------------------------------
+[debug] [2018-12-30T19:44:24.976Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Fernando\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2018-12-30T19:44:24.977Z] CLI Version:   6.2.2
+[debug] [2018-12-30T19:44:24.977Z] Platform:      win32
+[debug] [2018-12-30T19:44:24.977Z] Node Version:  v10.15.0
+[debug] [2018-12-30T19:44:24.978Z] Time:          Sun Dec 30 2018 19:44:24 GMT+0000 (GMT)
+[debug] [2018-12-30T19:44:24.978Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-30T19:44:24.992Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-30T19:44:24.993Z] > authorizing via signed-in user
+[debug] [2018-12-30T19:44:24.993Z] [iam] checking project practicasipc-e2448 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2018-12-30T19:44:24.996Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/practicasipc-e2448:testIamPermissions  
+
+[debug] [2018-12-30T19:44:26.178Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-30T19:44:26.181Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/practicasipc-e2448  
+ 
+[debug] [2018-12-30T19:44:26.777Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'practicasipc-e2448'...
+[info] 
+[info] i  deploying database, storage, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-12-30T19:44:26.801Z] >>> HTTP REQUEST PUT https://practicasipc-e2448.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2018-12-30T19:44:27.742Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database practicasipc-e2448 is valid
+[debug] [2018-12-30T19:44:27.748Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/practicasipc-e2448  
+ 
+[debug] [2018-12-30T19:44:29.150Z] <<< HTTP RESPONSE 200
+[info] i  storage: checking storage.rules for compilation errors...
+[debug] [2018-12-30T19:44:29.157Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/practicasipc-e2448:test  
+
+[debug] [2018-12-30T19:44:30.243Z] <<< HTTP RESPONSE 200
+[info] +  storage: rules file storage.rules compiled successfully
+[debug] [2018-12-30T19:44:30.252Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/practicasipc-e2448/versions  
+
+[debug] [2018-12-30T19:44:31.870Z] <<< HTTP RESPONSE 200
+[info] i  storage: uploading rules storage.rules...
+[debug] [2018-12-30T19:44:31.877Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/practicasipc-e2448/rulesets  
+
+[debug] [2018-12-30T19:44:32.935Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-30T19:44:32.936Z] [rules] created ruleset projects/practicasipc-e2448/rulesets/a1962d2c-4fb7-457c-ada5-62e089a9c83a
+[info] i  hosting[practicasipc-e2448]: beginning deploy...
+[info] i  hosting[practicasipc-e2448]: found 1725 files in /.
+[debug] [2018-12-30T19:44:33.982Z] [hosting] hash cache [] not populated
+[debug] [2018-12-30T19:44:41.850Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/practicasipc-e2448/versions/907946bb9d278b93:populateFiles  
+ <request body omitted>
+[debug] [2018-12-30T19:44:45.350Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-30T19:44:46.688Z] [hosting] hash cache [] stored for 1725 files
+[debug] [2018-12-30T19:44:46.689Z] [hosting][hash queue][FINAL]
+[debug] [2018-12-30T19:44:46.689Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/practicasipc-e2448/versions/907946bb9d278b93:populateFiles  
+ <request body omitted>
+[debug] [2018-12-30T19:44:51.297Z] [hosting][upload]
+[debug] [2018-12-30T19:44:56.999Z] [hosting][upload]
+[debug] [2018-12-30T19:47:02.552Z] ----------------------------------------------------------------------
+[debug] [2018-12-30T19:47:02.555Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Fernando\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2018-12-30T19:47:02.556Z] CLI Version:   6.2.2
+[debug] [2018-12-30T19:47:02.556Z] Platform:      win32
+[debug] [2018-12-30T19:47:02.556Z] Node Version:  v10.15.0
+[debug] [2018-12-30T19:47:02.557Z] Time:          Sun Dec 30 2018 19:47:02 GMT+0000 (GMT)
+[debug] [2018-12-30T19:47:02.557Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-30T19:47:02.572Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-30T19:47:02.573Z] > authorizing via signed-in user
+[debug] [2018-12-30T19:47:02.574Z] [iam] checking project practicasipc-e2448 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2018-12-30T19:47:02.576Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/practicasipc-e2448:testIamPermissions  
+
+[debug] [2018-12-30T19:47:03.756Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-30T19:47:03.761Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/practicasipc-e2448  
+ 
+[debug] [2018-12-30T19:47:04.310Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'practicasipc-e2448'...
+[info] 
+[info] i  deploying database, storage, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-12-30T19:47:04.333Z] >>> HTTP REQUEST PUT https://practicasipc-e2448.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2018-12-30T19:47:05.180Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database practicasipc-e2448 is valid
+[debug] [2018-12-30T19:47:05.187Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/practicasipc-e2448  
+ 
+[debug] [2018-12-30T19:47:06.604Z] <<< HTTP RESPONSE 200
+[info] i  storage: checking storage.rules for compilation errors...
+[debug] [2018-12-30T19:47:06.611Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/practicasipc-e2448:test  
+
+[debug] [2018-12-30T19:47:07.655Z] <<< HTTP RESPONSE 200
+[info] +  storage: rules file storage.rules compiled successfully
+[debug] [2018-12-30T19:47:07.664Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/practicasipc-e2448/versions  
+
+[debug] [2018-12-30T19:47:09.563Z] <<< HTTP RESPONSE 200
+[info] i  storage: uploading rules storage.rules...
+[debug] [2018-12-30T19:47:09.568Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/practicasipc-e2448/rulesets  
+
+[debug] [2018-12-30T19:47:10.617Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-30T19:47:10.617Z] [rules] created ruleset projects/practicasipc-e2448/rulesets/7e064d19-a7fa-4a65-b08b-65862310267a
+[info] i  hosting[practicasipc-e2448]: beginning deploy...
+[info] i  hosting[practicasipc-e2448]: found 1725 files in .
+[debug] [2018-12-30T19:47:11.070Z] [hosting] hash cache [] load error: lines is not defined
+[debug] [2018-12-30T19:47:12.286Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/practicasipc-e2448/versions/a5aeca2d2e8bfd46:populateFiles  
+ <request body omitted>
+[debug] [2018-12-30T19:47:13.308Z] [hosting] hash cache [] stored for 1725 files
+[debug] [2018-12-30T19:47:13.308Z] [hosting][hash queue][FINAL]
+[debug] [2018-12-30T19:47:13.309Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/practicasipc-e2448/versions/a5aeca2d2e8bfd46:populateFiles  
+ <request body omitted>
+[debug] [2018-12-30T19:47:15.556Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-30T19:47:22.127Z] [hosting][upload]
+[debug] [2018-12-30T19:47:27.443Z] [hosting][upload]
+[debug] [2018-12-30T19:47:31.541Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-30T19:47:31.543Z] [hosting][populate queue][FINAL]
+[debug] [2018-12-30T19:47:31.544Z] [hosting] uploads queued: 1472
+[debug] [2018-12-30T19:47:32.394Z] [hosting][upload]
+[debug] [2018-12-30T19:47:37.731Z] [uploadQueue] Retrying task cc3825340332bb34205f6d6dedad09458cca457b7c3b423d1af2b79a3fab2d56
+[debug] [2018-12-30T19:47:37.731Z] [uploadQueue] Retrying task 447fa99cb2cf45550079eb0d488de3ef2a9f88e1d3af6482881506b73eac5d0d
+[debug] [2018-12-30T19:47:37.733Z] [uploadQueue] Retrying task ed046785ae000b3b32bb9b977780267eed1e1221754dd8d4b49b26b3f0ab5d84
+[debug] [2018-12-30T19:47:37.734Z] [uploadQueue] Retrying task 520bc9a9df605362e1601162ce2045b842d2e06a441e7851330f875557b96f7d
+[debug] [2018-12-30T19:47:37.734Z] [uploadQueue] Retrying task 4acd3c1591894e7aa6d624b028b582d288790957f680793269373418b1366ff3
+[debug] [2018-12-30T19:47:37.734Z] [uploadQueue] Retrying task bd509e89d7d6545aad2f161a20440bb6ba87844bb0f98b40c134dbecc6250c85
+[debug] [2018-12-30T19:47:37.735Z] [uploadQueue] Retrying task eaefd200b3eaf5f9a2163aa067756b56951ccbfe282447dedb2a8650c8f5b234
+[debug] [2018-12-30T19:47:39.026Z] [hosting][upload]
+[debug] [2018-12-30T19:47:45.164Z] [hosting][upload]
+[debug] [2018-12-30T19:53:01.150Z] ----------------------------------------------------------------------
+[debug] [2018-12-30T19:53:01.153Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Fernando\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2018-12-30T19:53:01.154Z] CLI Version:   6.2.2
+[debug] [2018-12-30T19:53:01.154Z] Platform:      win32
+[debug] [2018-12-30T19:53:01.154Z] Node Version:  v10.15.0
+[debug] [2018-12-30T19:53:01.155Z] Time:          Sun Dec 30 2018 19:53:01 GMT+0000 (GMT)
+[debug] [2018-12-30T19:53:01.155Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-30T19:53:01.171Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-30T19:53:01.172Z] > authorizing via signed-in user
+[debug] [2018-12-30T19:53:01.172Z] [iam] checking project practicasipc-e2448 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2018-12-30T19:53:01.175Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/practicasipc-e2448:testIamPermissions  
+
+[debug] [2018-12-30T19:53:02.413Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-30T19:53:02.418Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/practicasipc-e2448  
+ 
+[debug] [2018-12-30T19:53:03.049Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'practicasipc-e2448'...
+[info] 
+[info] i  deploying database, storage, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-12-30T19:53:03.070Z] >>> HTTP REQUEST PUT https://practicasipc-e2448.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2018-12-30T19:53:03.904Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database practicasipc-e2448 is valid
+[debug] [2018-12-30T19:53:03.911Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/practicasipc-e2448  
+ 
+[debug] [2018-12-30T19:53:05.388Z] <<< HTTP RESPONSE 200
+[info] i  storage: checking storage.rules for compilation errors...
+[debug] [2018-12-30T19:53:05.394Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/practicasipc-e2448:test  
+
+[debug] [2018-12-30T19:53:06.565Z] <<< HTTP RESPONSE 200
+[info] +  storage: rules file storage.rules compiled successfully
+[debug] [2018-12-30T19:53:06.573Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/practicasipc-e2448/versions  
+
+[debug] [2018-12-30T19:53:08.580Z] <<< HTTP RESPONSE 200
+[info] i  storage: uploading rules storage.rules...
+[debug] [2018-12-30T19:53:08.586Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/practicasipc-e2448/rulesets  
+
+[debug] [2018-12-30T19:53:09.700Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-30T19:53:09.700Z] [rules] created ruleset projects/practicasipc-e2448/rulesets/5e4dc13a-f2c8-46a0-8ce7-81fd0a4240d5
+[info] i  hosting[practicasipc-e2448]: beginning deploy...
+[info] i  hosting[practicasipc-e2448]: found 1720 files in .
+[debug] [2018-12-30T19:53:10.132Z] [hosting] hash cache [] load error: lines is not defined
+[debug] [2018-12-30T19:53:11.341Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/practicasipc-e2448/versions/c078d1848cdb8b16:populateFiles  
+ <request body omitted>
+[debug] [2018-12-30T19:53:12.330Z] [hosting] hash cache [] stored for 1720 files
+[debug] [2018-12-30T19:53:12.331Z] [hosting][hash queue][FINAL]
+[debug] [2018-12-30T19:53:12.331Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/practicasipc-e2448/versions/c078d1848cdb8b16:populateFiles  
+ <request body omitted>
+[debug] [2018-12-30T19:53:15.738Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-30T19:53:21.434Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-30T19:53:21.451Z] [hosting][populate queue][FINAL]
+[debug] [2018-12-30T19:53:21.452Z] [hosting] uploads queued: 988
+[debug] [2018-12-30T19:53:23.480Z] [hosting][upload]
+[debug] [2018-12-30T19:53:26.380Z] [hosting][upload]
+[debug] [2018-12-30T19:53:30.914Z] [hosting][upload]
+[debug] [2018-12-30T19:53:36.716Z] [hosting][upload]
+[debug] [2018-12-30T19:53:37.194Z] [uploadQueue] Retrying task 84ee5f9f47e97ed559ad01ff71c6ce559c491dc60148b7e0c0c41f87ed3c90b9
+[debug] [2018-12-30T19:53:42.187Z] [hosting][upload]
+[debug] [2018-12-30T19:53:46.322Z] [uploadQueue] Retrying task 566934a3870c0d3e7dcad7f7463db5e8ed31af52f4e16601e40b75545973e267
+[debug] [2018-12-30T19:53:46.362Z] [uploadQueue] Retrying task d28454a452ce108789309e6647413e7e7830de038d9b19af753116da00301775
+[debug] [2018-12-30T19:53:46.362Z] [uploadQueue] Retrying task 90c0f67c04c630b7c21eba0ca908fedb1ee989e0172ae8e1a2c9647776db22ca
+[debug] [2018-12-30T19:53:46.369Z] [uploadQueue] Retrying task aa430d878f13dc9441e2ca7d14bf8ad96dd32eba4d8625d6d5d89fe5c43996ba
+[debug] [2018-12-30T19:53:46.404Z] [uploadQueue] Retrying task 0a767e0dcfe1f9a2d6ebd327ebee572fe61d863d2f04efcf7070160ea3ddef48
+[debug] [2018-12-30T19:53:46.665Z] [uploadQueue] Retrying task 7553e98656e851f56edac5742916695f07143e7e3b291660742154f3c5424232
+[debug] [2018-12-30T19:53:48.380Z] [hosting][upload]
+[debug] [2018-12-30T19:53:48.409Z] [uploadQueue] Retrying task 21fea989a1ab9c9a8061fc147926eac06a56edba211411ed99af64cbc28994ad
+[debug] [2018-12-30T19:53:48.421Z] [uploadQueue] Retrying task 067b398995726516c8b6032143d113900c0c7925ed4f1e28fa2e324c378b4dc2
+[debug] [2018-12-30T19:53:48.450Z] [uploadQueue] Retrying task 3efb7b586b9f0e178a1b7545f8dcd0d8dec90f5ad8043d530a2857029c86fbc1
+[debug] [2018-12-30T19:53:49.512Z] [uploadQueue] Retrying task 1ac820943c64a4667b64832dd550cdcab66bd80b9653a19fa8e97f8524830002
+[debug] [2018-12-30T19:53:49.513Z] [uploadQueue] Retrying task 53b93558e1a2a8d7fe0dbfc04cee9a593c53617f14022e56b0a2ae6702455e63
+[debug] [2018-12-30T19:53:49.526Z] [uploadQueue] Retrying task fa127987f5b75aca66eca416bb0200a1bb189df887ff8a3e4ac966cda22d5771
+[debug] [2018-12-30T19:53:49.541Z] [uploadQueue] Retrying task 1a4b6dc63f7e3ea9cfc4fc12426b59a2a6fd911606db11ea933ca36a8f83386b
+[debug] [2018-12-30T19:53:55.673Z] [uploadQueue] Retrying task 523ff620b1af47079d44de9fb5fb047c6254b8279d2ef87191a2a16e05961ea8
+[debug] [2018-12-30T19:53:55.680Z] [uploadQueue] Retrying task 46cc236a2876c50ead29ab3890bf465a3b66fc6bd1cd888d6f5b643456ca15f3
+[debug] [2018-12-30T19:53:55.682Z] [uploadQueue] Retrying task 7d2228b98256507185af513dce61599ce8c8f81cb113568d34e190f6e2700cba
+[debug] [2018-12-30T19:53:55.682Z] [uploadQueue] Retrying task 361e658f3048000b709b8c9531eabb8bbe11341cda9a61ce6663eea2feeb7f1a
+[debug] [2018-12-30T19:53:55.687Z] [uploadQueue] Retrying task ed3125e4f161c6aad8e47a716217a9405a15a7268d065ed1f1fb71aa9f61fdfa
+[debug] [2018-12-30T19:53:55.687Z] [uploadQueue] Retrying task f3a931d8114f3413edb278ca0f8dcd48aa578d6e14147ab3f690a5e2cf9c986c
+[debug] [2018-12-30T19:53:55.690Z] [uploadQueue] Retrying task 2b4721d9c5166d91c18ee876729042d36df00fec7ffdfb8a1570621c40b66c3c
+[debug] [2018-12-30T19:53:56.277Z] [uploadQueue] Retrying task 11d5115833a115ace25ea68fdcc8cd82479f250a8723731c3c9c79fe3d5f9757
+[debug] [2018-12-30T19:53:56.543Z] [uploadQueue] Retrying task fb62c4ba77fdf926c8135433c92ed2ff0a4b6f3abb50cd4fb1519eb7e04d7f57
+[debug] [2018-12-30T19:53:57.680Z] [uploadQueue] Retrying task bc06540b0087b04b2dbe3a230993fdd6f6ce56ab7d9c13857c5dfa6286567840
+[debug] [2018-12-30T19:53:57.683Z] [uploadQueue] Retrying task 2d643b7893c2f875c0a5418cb7a87ea371293f82c0e3701eb7d243ce625a003b
+[debug] [2018-12-30T19:53:57.684Z] [uploadQueue] Retrying task 3ec40dce2989f278e746c8b52026827aefaeeece4a96b17632b33615500203f6
+[debug] [2018-12-30T19:53:57.686Z] [uploadQueue] Retrying task aa20323ac921b887d03e8b173901316c03a82aa5d020c75bb5ebfb1ca5004a1a
+[debug] [2018-12-30T19:53:57.690Z] [uploadQueue] Retrying task d51425de88322e87e6fc3c68f8c1ba0f7b06c5992ad1ec699de1fe9ee4ce0e3f
+[debug] [2018-12-30T19:53:57.691Z] [uploadQueue] Retrying task 392021cfdc3e243f7657316e5cb7b5f539f61c31dd40a609945def467b73dfb3
+[debug] [2018-12-30T19:53:57.691Z] [uploadQueue] Retrying task a8b5535684f2cee6513ce93251a38a9e56f4cd7aa75017aec40eb895c55eadaa
+[debug] [2018-12-30T19:53:57.692Z] [uploadQueue] Retrying task 644f6e4de2bbdbc6172687e6a99f1701deb87afd96893140a71e7301519b9a1b
+[debug] [2018-12-30T19:53:57.700Z] [uploadQueue] Retrying task 92a5168c3a4818fbfb8339806092ae7c0547695487f44755dc76f8daeb79b2e2
+[debug] [2018-12-30T19:53:59.162Z] [uploadQueue] Retrying task b3b713d116dfd09f8e94b1cb22af433316af2a81908711cd2a7e8a1f443c57d5
+[debug] [2018-12-30T19:53:59.164Z] [uploadQueue] Retrying task fea2cdd75aee98746f80bcded97e0c043f46ea3afb648b1914d74c60516e6e01
+[debug] [2018-12-30T19:53:59.168Z] [uploadQueue] Retrying task f0e4d8fd5bab663d864a284ea1ea1ff775c34fe3d45ef1cb516b9939281a755d
+[debug] [2018-12-30T19:53:59.169Z] [uploadQueue] Retrying task 3e99540481a6bca318880bc485018a79a42e0b2602789e974ee9e89e3c0a4748
+[debug] [2018-12-30T19:53:59.169Z] [uploadQueue] Retrying task 87856f8654a3e7701475231757c150052bfdfac27142ecedd8a5e780c57ed85c
+[debug] [2018-12-30T19:53:59.172Z] [uploadQueue] Retrying task efd2a75b11a844185fc6e5679f6ec368400ef259dd7e383d3520d09eed5f36df
+[debug] [2018-12-30T19:53:59.173Z] [uploadQueue] Retrying task 3f2638877da308eecbeec13d970e403b7f81956c9319e9a44558af66de884a4c
+[debug] [2018-12-30T19:53:59.191Z] [uploadQueue] Retrying task 114428f8fc04a24d0efd47bcbcd0960b915516197173ca7511198951d384031a
+[debug] [2018-12-30T19:53:59.207Z] [uploadQueue] Retrying task cd3b523f808bf7d630166f782ec7c63175f384a3c47b4962cfcf9bf1a8412a73
+[debug] [2018-12-30T19:53:59.719Z] [uploadQueue] Retrying task 486c2bfead38e2148f6329fc2e3d5bd2adf2b9b5b49c7ff3cc5120f892405ecc
+[debug] [2018-12-30T19:53:59.719Z] [uploadQueue] Retrying task e57348d2a735b90039ffbb9039f663691e5fff5d9ffe6036da0ef43fef58fd4b
+[debug] [2018-12-30T19:53:59.720Z] [uploadQueue] Retrying task 1c6593d50fe5010d5b7cefde45ed69de71951f938d8bd1f9620bc326bf40d8ab
+[debug] [2018-12-30T19:54:00.880Z] [uploadQueue] Retrying task afb28c807992fbcd16eff88d230e10f515caafee603ff721601abe29cc0a2c3b
+[debug] [2018-12-30T19:54:00.896Z] [uploadQueue] Retrying task df403e9b37b9f8c77d38666f241e437789dad676bec11eb1d5d4cb46c60fc742
+[debug] [2018-12-30T19:54:01.653Z] [hosting][upload]
+[debug] [2018-12-30T19:54:03.684Z] [uploadQueue] Retrying task b3f09bf75e706efaf30c438ce34271a9aec6f81b889c0d7572f2e7c602728bec
+[debug] [2018-12-30T19:54:03.686Z] [uploadQueue] Retrying task 302fe3b493c50e57c07be5cde19f7e8e4c31567ce85d3f83d5d38b398787c8fc
+[debug] [2018-12-30T19:54:03.686Z] [uploadQueue] Retrying task b5eca8e8ac35af2d1c60afca8337fc8e594f671ed354a13b1b3e46bb52df168b
+[debug] [2018-12-30T19:54:03.688Z] [uploadQueue] Retrying task ea363088156281aafd7f5ef89529bdd1645684c74bec96846bbdb73e10df6e65
+[debug] [2018-12-30T19:54:04.084Z] [uploadQueue] Retrying task 0a767e0dcfe1f9a2d6ebd327ebee572fe61d863d2f04efcf7070160ea3ddef48
+[debug] [2018-12-30T19:54:04.544Z] [uploadQueue] Retrying task cbd4bb9c07b29fecbb3ecacf43f71b5218dd3a1cc57b17d965d31fc882166e39
+[debug] [2018-12-30T19:54:07.948Z] [uploadQueue] Retrying task efff66602fd04fa009ae211c4dce7d4ae4b4bbb275982c154c73d743f0e21919
+[debug] [2018-12-30T19:54:09.680Z] [uploadQueue] Retrying task e11c2f891fb4d2837389a51b199bc46cf8159fb27766732855ab1cbb781b0b10
+[debug] [2018-12-30T19:54:09.701Z] [uploadQueue] Retrying task 2f159f48ed2cb1846ba67067d770aa75270722e19e55136186ce1afcbeba19e3
+[debug] [2018-12-30T19:54:10.611Z] [uploadQueue] Retrying task 27899143f3ed9819f012f39100cb7506dd9113b336b532d3df6001ce7adae2bd
+[debug] [2018-12-30T19:54:10.642Z] [uploadQueue] Retrying task 1f894360a7da6f73523e30820afe021211f619ee0740cd65e2930465c616d3b0
+[debug] [2018-12-30T19:54:12.258Z] [hosting][upload]
+[debug] [2018-12-30T19:54:17.708Z] [uploadQueue] Retrying task 9d51b202582952d194db77a290ba224b75ba58369f21dd103bf79c711df578cc
+[debug] [2018-12-30T19:54:17.710Z] [uploadQueue] Retrying task b733b9a861c3884a41e5d0427700c63acf01514a46d9cc8d69780e39eb62afb3
+[debug] [2018-12-30T19:54:17.712Z] [uploadQueue] Retrying task b2e68e41a93abe1d6ec1cf024c7405c65f16298f4580291633a5b7a6a09affad
+[debug] [2018-12-30T19:54:17.713Z] [uploadQueue] Retrying task f22ced68991cb1947a6df867e23a100401ca5b2afc9bcf1e3c4ac46c22e75826
+[debug] [2018-12-30T19:54:17.713Z] [uploadQueue] Retrying task c12a8528bd06c345d3aff3a19f1301d424e42135ab16807ceae851895e5c3fdc
+[debug] [2018-12-30T19:54:17.716Z] [uploadQueue] Retrying task 003d961cd8ceb6df6a90525b7eacec634ebfad5346103322836f83842092815a
+[debug] [2018-12-30T19:54:17.717Z] [uploadQueue] Retrying task d08d308580431353c4ac91dd58b1312fbd1075522c4335eb4d91145c8e4b9cdc
+[debug] [2018-12-30T19:54:17.717Z] [uploadQueue] Retrying task b104c8291388dc1831e0b0f62795a07669aa980352e63701272556695aeecc25
+[debug] [2018-12-30T19:54:17.726Z] [uploadQueue] Retrying task 0674a0e7e3b5a30ba883d9ebeecc61d5a847ef9d9d9a7b0c338593e729cfe076
+[debug] [2018-12-30T19:54:19.085Z] [uploadQueue] Retrying task 99842d44fd2531ba672c4a0dfdb1a40e417ae86d90472f02585d56fa66118133
+[debug] [2018-12-30T19:54:19.088Z] [uploadQueue] Retrying task 6f4e14573146676296f62a832371e2f1e3a88ca52fd658fc782ef6fc350adbf3
+[debug] [2018-12-30T19:54:19.104Z] [uploadQueue] Retrying task abba89e614a3e5fe0bd1cbd11ea9822d68d2f95e3cf13d6187d2c583717b98c3
+[debug] [2018-12-30T19:54:19.113Z] [uploadQueue] Retrying task 47c9e3ac7bd806ab05db378f87a0d07f9401ef74d31a2cb8bf0989515ea93540
+[debug] [2018-12-30T19:54:19.114Z] [uploadQueue] Retrying task 665dc4a3d59b58ff85007113b3dd8a680c837e776874bbc120cfd89592762dd8
+[debug] [2018-12-30T19:54:19.115Z] [uploadQueue] Retrying task 3b6d243fb113d7498b24eeeb40d26e1588e10dbce5d525f05937818d0207fdf1
+[debug] [2018-12-30T19:54:19.115Z] [uploadQueue] Retrying task 4d5d71c019bd73ec404093d1603f350e3d44f999e97ebfd11fa20753a6cca9a4
+[debug] [2018-12-30T19:54:19.128Z] [uploadQueue] Retrying task 039fdb253805053c3f7cd56fc7312da82aa1c7c778517426eb676ff848432a77
+[debug] [2018-12-30T19:54:19.142Z] [uploadQueue] Retrying task 6deb1019a094a7ca40b9e9cbd7e11d6480c80b67bcf10492c4e8fee86b8bd852
+[debug] [2018-12-30T19:54:19.143Z] [uploadQueue] Retrying task fa978bb5a98fd25f638b6774ceaba981a5e9766a0c5f5c4c86ab7bca99f6d3d0
+[debug] [2018-12-30T19:54:19.145Z] [uploadQueue] Retrying task 0c82086b963b4cc6f435b7d1e6ddff568df576550aeb29c46715dbb80627dccc
+[debug] [2018-12-30T19:54:19.160Z] [uploadQueue] Retrying task 453020c159f1a9387d57375e822d2306f70acbfafdcb42f717d63054ac3fd35f
+[debug] [2018-12-30T19:54:19.181Z] [uploadQueue] Retrying task d78aed75ef3f4df0afee6246be94e4979a0a3b8fdf5c43f01459dac38001418e
+[debug] [2018-12-30T19:54:19.183Z] [uploadQueue] Retrying task 11068187e3959e0410a6ca99b376235eeab72de2e54dbb66d88b56c12a43e75d
+[debug] [2018-12-30T19:54:19.439Z] [uploadQueue] Retrying task 50c3aa3ee1aae7af878b4cdd518ac5dfeac7e914c861d4a7882de392b2d55bd6
+[debug] [2018-12-30T19:54:19.535Z] [uploadQueue] Retrying task 2a3c23516aa8d782573985bd35dc7070723cd380842c09f1d6a89ac165a28531
+[debug] [2018-12-30T19:54:19.594Z] [uploadQueue] Retrying task 1670e2f9917101c413cf717be5115cfbf42f54b25675d0b18be047bb6ac6d53a
+[debug] [2018-12-30T19:54:19.595Z] [uploadQueue] Retrying task 94c467924d82350f81009f6e18881f69763dfc87cae097239aad60097427f6d1
+[debug] [2018-12-30T19:54:19.624Z] [uploadQueue] Retrying task b87104027b2f58bdc59b05f310f0de3fa52ef6d146dababfd85e7c011f382b5d
+[debug] [2018-12-30T19:54:19.653Z] [uploadQueue] Retrying task d55649c760c8b89de48e4915800977bbd8c5615659ea50202e47a5f531428261
+[debug] [2018-12-30T19:54:19.669Z] [uploadQueue] Retrying task e1ec4bff35a2ff8c1a9094eededc961246154b866e36d11f29b88a7914947bb0
+[debug] [2018-12-30T19:54:20.109Z] [uploadQueue] Retrying task 3b2a5f4521aaa1ab209d380cbb91029f0c4f94f48fd9d566439cd18c0994327b
+[debug] [2018-12-30T19:54:20.119Z] [uploadQueue] Retrying task 6ff23ee138ebb89fc4a3a955bd6e4fc86d246516763820b9e0ce6479e9e9a94b
+[debug] [2018-12-30T19:54:20.266Z] [uploadQueue] Retrying task 0a767e0dcfe1f9a2d6ebd327ebee572fe61d863d2f04efcf7070160ea3ddef48
+[debug] [2018-12-30T19:54:21.671Z] [uploadQueue] Retrying task 1dd8d11fd530d60ec5c47ee191f4c869213a8ac71a529a6b5a9643f6f80a7c2e
+[debug] [2018-12-30T19:54:26.688Z] [uploadQueue] Retrying task 1f48971e22ce511fbfdde2fb8b0e7a5ec5bf363afdcb4e0490416c01cd78f4aa
+[debug] [2018-12-30T19:54:26.689Z] [uploadQueue] Retrying task 11c7f53af0879eb4be579a5a1272f2def4ea769fc64f5ac5f7709993597ac1ca
+[debug] [2018-12-30T19:54:26.691Z] [uploadQueue] Retrying task df514060cad5b1dbcbff7de9b408f693e0be4aaa62c592ccae2f23ded2b1a53d
+[debug] [2018-12-30T19:54:28.255Z] [uploadQueue] Retrying task 60da1a0df173714779866290368912f923a3fb50a7e74c6c964716fd2e0b48ff
+[debug] [2018-12-30T19:54:28.274Z] [uploadQueue] Retrying task 0828c3cb18bbf147a5917f47bf061e20f41d5bb12958eec0c7e0615ecd3906d1
+[debug] [2018-12-30T19:54:28.275Z] [uploadQueue] Retrying task 04bb49aa4a05a6e369440e13a87cdf09162b6e3a5eb4d26eda4253bfb2feec67
+[debug] [2018-12-30T19:54:28.320Z] [uploadQueue] Retrying task 5c216415860a13220697df898bfea871e67cd0db23b830c7f6e4f986d97bbfe9
+[debug] [2018-12-30T19:54:28.321Z] [uploadQueue] Retrying task 2d29dd3f01d97534e2706676b54bdbb2241e0aa2ae8818185cee3d0272a6f947
+[debug] [2018-12-30T19:54:28.341Z] [uploadQueue] Retrying task 658ef9a8b9c65b4b3ed13a1e536d9738c440ab6afa7ea11e07ae8380d2284d72
+[debug] [2018-12-30T19:54:31.867Z] [uploadQueue] Retrying task d521bbe60afb882d3174e90774eff66f962a3c88041e9d321e4edd3bf58cfc3f
+[debug] [2018-12-30T19:54:31.911Z] [uploadQueue] Retrying task 447515e9f502c826db15ecdfbc5ee1427b00f1155ce4b627bc15a4791129bbb4
+[debug] [2018-12-30T19:54:33.524Z] [uploadQueue] Retrying task 616423b09ad6ace638a347e88f29f71d58ae2f342815d7615e12ff5e53d7237a
+[debug] [2018-12-30T19:54:35.265Z] [uploadQueue] Retrying task e42a840bebba8866f5a03ec0b92fc618e1426dd935c08a933cfb65e1a7cf4bde
+[debug] [2018-12-30T19:54:36.627Z] [uploadQueue] Retrying task 1bdbb69c8b4ae35b20015545297ffd87d381cd196d7654a6cac52932c9debaa8
+[debug] [2018-12-30T19:54:37.657Z] [uploadQueue] Retrying task f773ececa526cfab0f6295afebaaaa7be4c8a5b531ee6d297135491874b02bd1
+[debug] [2018-12-30T19:54:37.662Z] [uploadQueue] Retrying task 957a5e08597812feb3ef5724875f6b86f2cf644664eb7911255aa91aae1d5cc1
+[debug] [2018-12-30T19:54:37.783Z] [uploadQueue] Retrying task 1b6b0b388a2a194e2307f14e89f49291369e16c52109c7df77441aadf37e5b47
+[debug] [2018-12-30T19:54:37.805Z] [uploadQueue] Retrying task d9cb80150f208a1666fddd8af17f8107165280ec78152c08eaa1c0f98e533904
+[debug] [2018-12-30T19:54:38.056Z] [uploadQueue] Retrying task 50c3aa3ee1aae7af878b4cdd518ac5dfeac7e914c861d4a7882de392b2d55bd6
+[debug] [2018-12-30T19:54:38.060Z] [uploadQueue] Retrying task 2a3c23516aa8d782573985bd35dc7070723cd380842c09f1d6a89ac165a28531
+[debug] [2018-12-30T19:54:38.060Z] [uploadQueue] Retrying task 1670e2f9917101c413cf717be5115cfbf42f54b25675d0b18be047bb6ac6d53a
+[debug] [2018-12-30T19:54:38.126Z] [uploadQueue] Retrying task d78aed75ef3f4df0afee6246be94e4979a0a3b8fdf5c43f01459dac38001418e
+[debug] [2018-12-30T19:54:38.142Z] [uploadQueue] Retrying task 6deb1019a094a7ca40b9e9cbd7e11d6480c80b67bcf10492c4e8fee86b8bd852
+[debug] [2018-12-30T19:54:39.658Z] [uploadQueue] Retrying task 9a28ab35f39e661928ed34544423f33d5aec5d2f7dfcf6e6c5fa24d8a13a579b
+[debug] [2018-12-30T19:54:44.872Z] [uploadQueue] Retrying task 0dac012e830056241d7583fd418ed514930256b072ecad10b66bc86e8cf23373
+[debug] [2018-12-30T19:55:01.763Z] [uploadQueue] Retrying task 06afc3eb38679d28f406f432c32b44a3031f7f975c9fdd415b70cce4a36a6746
+[debug] [2018-12-30T19:55:17.671Z] [uploadQueue] Retrying task 87b2995340012acb1ab41de09436886fd6abcfbbd6a8a92d571c6c85dda935dc
+[debug] [2018-12-30T19:55:19.393Z] [uploadQueue] Retrying task f47b4529f05ba68161c9f752d666e31d796d9581b3eb614d2a3c86642bfead02
+[debug] [2018-12-30T19:55:20.428Z] [uploadQueue] Retrying task 972181daaa0084060f832cf6251a424658d753453e74be1a6639c73bf3a07ba6
+[debug] [2018-12-30T19:55:40.315Z] [uploadQueue] Retrying task 9a28ab35f39e661928ed34544423f33d5aec5d2f7dfcf6e6c5fa24d8a13a579b
+[debug] [2018-12-30T19:55:47.448Z] [uploadQueue] Retrying task b26c7299d289ce36e4891bce1b9e47364c6eb256773123bfc6fd725b89746c12
+[debug] [2018-12-30T19:55:51.372Z] [uploadQueue] Retrying task 401550c637a79ee3cd4355d2d145b65e0a6bd23c84d147f872bae37d19ecf049
+[debug] [2018-12-30T19:55:51.763Z] [uploadQueue] Retrying task 1f894360a7da6f73523e30820afe021211f619ee0740cd65e2930465c616d3b0
+[debug] [2018-12-30T19:56:48.982Z] [uploadQueue] Retrying task 15f34929f66549d4cb5f09dad7696fa8cd4eca6ed764da9b7d5f1a3981f6d13d
+[debug] [2018-12-30T19:57:07.828Z] [uploadQueue] Retrying task 972181daaa0084060f832cf6251a424658d753453e74be1a6639c73bf3a07ba6
