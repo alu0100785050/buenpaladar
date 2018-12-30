@@ -13,6 +13,10 @@ function validate(){
 
         auth.signInWithEmailAndPassword(email.value,password.value).then(function(){
             console.log("Login successful!");
+
+            //Setup document cookie
+            document.cookie = "email=" + email;
+
             window.location.href = "../html/index.html"
 
         }).catch(function(error){

@@ -1,1 +1,8 @@
 node_modules
+*.json
+*.yml
+*.ini
+*.firebaserc
+LICENSE
+storage.rules
+vendor
