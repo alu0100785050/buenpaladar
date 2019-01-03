@@ -14,11 +14,6 @@ function validate(){
         auth.signInWithEmailAndPassword(email.value,password.value).then(function(){
             console.log("Login successful!");
 
-            //Setup document cookie
-            //document.cookie = "email=" + email;
-
-            window.location.href = "index.html"
-
         }).catch(function(error){
             //Handle errors
 
@@ -29,8 +24,8 @@ function validate(){
 
             email.style.color = "coral";
             password.style.color = "coral";
-        });
 
+        });
     }
     else{
         email.style.color = "coral";
