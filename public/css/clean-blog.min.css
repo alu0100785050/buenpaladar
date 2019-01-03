@@ -140,8 +140,22 @@ img::-moz-selection {
   }
 } 
 
-.cat{
-	width: 80%;
+.cat {
+    margin-bottom:50px;
+    background-attachment:scroll;
+	background-size:cover;
+}
+
+img {
+	vertical-align: middle;
+}
+
+a.nounderline:link{
+	text-decoration:none;
+}
+
+a.nounderline:hover{
+	color:#666666;
 }
 
 #mainNav {
@@ -231,7 +245,8 @@ header.masthead {
 	background:no-repeat center center;
 	background-color:#868e96;
     background-attachment:scroll;
-	background-size:cover
+	background-size:cover;
+
 }
 
 header.masthead .overlay {
@@ -245,7 +260,7 @@ header.masthead .overlay {
 
 header.masthead .page-heading,header.masthead .post-heading,header.masthead .site-heading {
 	padding:200px 0 150px;
-	color:white
+	color:white;
 }
 
 @media only screen and (min-width:768px) {
