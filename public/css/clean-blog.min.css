@@ -92,7 +92,7 @@ img::-moz-selection {
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #f3f3f3;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -102,12 +102,13 @@ img::-moz-selection {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  color: grey;
+  color: #808080;
 }
 
 /* Add an active class to highlight the current page */
-.active {
+.masthead .topnav .active {
   color: white;
+  text-decoration: underline;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -139,10 +140,13 @@ img::-moz-selection {
   }
 } 
 
+.cat{
+	width: 80%;
+}
+
 #mainNav {
 	position:absolute;
-	border-bottom:1px solid #e9ecef;
-	background-color:#fff;
+	background-color:none;
 	font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif
 }
 
@@ -227,7 +231,6 @@ header.masthead {
 	background:no-repeat center center;
 	background-color:#868e96;
     background-attachment:scroll;
-	position:relative;
 	background-size:cover
 }
 
@@ -242,7 +245,7 @@ header.masthead .overlay {
 
 header.masthead .page-heading,header.masthead .post-heading,header.masthead .site-heading {
 	padding:200px 0 150px;
-	color:#888888
+	color:white
 }
 
 @media only screen and (min-width:768px) {
