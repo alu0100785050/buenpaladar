@@ -15,7 +15,7 @@ function validate(){
             console.log("Login successful!");
 
             //Setup document cookie
-            document.cookie = "email=" + email;
+            //document.cookie = "email=" + email;
 
             window.location.href = "index.html"
 

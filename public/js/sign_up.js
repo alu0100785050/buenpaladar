@@ -14,8 +14,23 @@ function sign(){
     //var surn = document.getElementById("surn");
     var email = document.getElementById("email");
     var password = document.getElementById("password");
+    var checkpass = document.getElementById("checkpass");
 
-    //TODO: Stuff
+    if(checkpasswd(password, checkpass)){
+            if(validateEmail(email)){
+                //Signup + error management
+                //ALSO: auto-error handling includes email repetition in the database (i think)
 
-    //ALSO: Error handling includes email repetition in the database (i think)
+            }
+            else {
+                //Error management (email format incorrect)
+            }
+    }
+    else {
+        //Password incorrect error
+
+    }
+
+
+
 }
