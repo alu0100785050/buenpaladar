@@ -3,8 +3,9 @@ function validateEmail(email) {
     return re.test(String(email).toLowerCase());
 }
 
-function checkpasswd(){
+function checkpasswd(pass, checkpass){
     //TODO: Checks if password and confirm_password are equal
+    return (pass === checkpass) ? true : false;
 }
 
 function sign(){
