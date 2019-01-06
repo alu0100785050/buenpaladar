@@ -37,3 +37,29 @@ function validate(){
         document.getElementById('password').value = '';
     });
 }
+
+firebase.auth().onAuthStateChanged(function(user) {
+   if (user) {
+        window.location = 'index.html';
+  }
+});
+
+function initApp() {
+
+    firebase.auth().onAuthStateChanged(function(user){
+
+        //document getElementById()
+        if(user){
+
+        }
+        else{
+
+        }
+    });
+
+
+}
+
+window.onload = function() {
+    initApp();
+}
