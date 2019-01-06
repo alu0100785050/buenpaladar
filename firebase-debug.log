@@ -1,0 +1,13 @@
+[debug] [2019-01-06T17:13:10.450Z] ----------------------------------------------------------------------
+[debug] [2019-01-06T17:13:10.457Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Fernando\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-01-06T17:13:10.457Z] CLI Version:   6.2.2
+[debug] [2019-01-06T17:13:10.458Z] Platform:      win32
+[debug] [2019-01-06T17:13:10.458Z] Node Version:  v10.15.0
+[debug] [2019-01-06T17:13:10.460Z] Time:          Sun Jan 06 2019 17:13:10 GMT+0000 (GMT)
+[debug] [2019-01-06T17:13:10.460Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-01-06T17:13:10.487Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-01-06T17:13:10.490Z] > authorizing via signed-in user
+[debug] [2019-01-06T17:13:10.490Z] [iam] checking project practicasipc-e2448 for permissions ["firebase.projects.get"]
+[debug] [2019-01-06T17:13:10.498Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/practicasipc-e2448:testIamPermissions  
+

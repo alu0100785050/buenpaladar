@@ -8,7 +8,6 @@ var config = {
 };
 
 firebase.initializeApp(config);
-firebase.auth().setPersistence(firebase.auth.Auth.Persistence.NONE);
 
 allCookies = document.cookies;
 
