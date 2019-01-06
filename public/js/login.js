@@ -44,22 +44,4 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 
-function initApp() {
 
-    firebase.auth().onAuthStateChanged(function(user){
-
-        //document getElementById()
-        if(user){
-
-        }
-        else{
-
-        }
-    });
-
-
-}
-
-window.onload = function() {
-    initApp();
-}

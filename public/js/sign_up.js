@@ -20,17 +20,62 @@ function sign(){
             if(validateEmail(email)){
                 //Signup + error management
                 //ALSO: auto-error handling includes email repetition in the database (i think)
+                firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error){
+                    var errorCode = error.code;
+                    var errorMessage = error.message;
 
+                    console.log('Error: ' + errorCode + ', ' + errorMessage);
+                    email.style.color = "coral";
+                    password.style.color = "coral";
+                    checkpass.style.color = "coral";
+                });
             }
             else {
                 //Error management (email format incorrect)
+                password.style.color = "coral";
+                checkpass.style.color = "coral";
+                checkpass.value = '';
+                password.value = '';
             }
     }
     else {
         //Password incorrect error
+        password.style.color = "coral";
+        checkpass.style.color = "coral";
+        checkpass.value = '';
 
     }
 
+    checkpass.addEventListener('click', e => {
+        document.getElementById('checkpass').value = '';
+    });
+
+}
+
+firebase.auth().onAuthStateChanged(function(user){
+    if(user){
+        window.location = 'index.html';
+    }
+});
+
+function initApp() {
+
+    firebase.auth().onAuthStateChanged(function(user){
+
+        //Manage visible spaces
+        //document getElementById()
+        if(user){
+
+        }
+        else{
+
+        }
+    });
 
 
 }
+
+window.onload = function() {
+    initApp();
+}
+
