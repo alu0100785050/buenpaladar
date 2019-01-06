@@ -11,3 +11,15 @@
 [debug] [2019-01-06T17:13:10.490Z] [iam] checking project practicasipc-e2448 for permissions ["firebase.projects.get"]
 [debug] [2019-01-06T17:13:10.498Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/practicasipc-e2448:testIamPermissions  
 
+[debug] [2019-01-06T17:13:12.311Z] <<< HTTP RESPONSE 200
+[debug] [2019-01-06T17:13:12.317Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/practicasipc-e2448  
+ 
+[debug] [2019-01-06T17:13:13.586Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Fernando\Documents\GitHub\BuenPaladar\buenpaladar'...
+[info] 
+[debug] [2019-01-06T17:13:13.598Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/110438816831/clients/_:getWebAppConfig  
+ 
+[debug] [2019-01-06T17:13:14.594Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
