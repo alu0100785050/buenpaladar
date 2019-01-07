@@ -15,6 +15,14 @@ function changeToProf(){
     edit_form.style.display = "none";
 }
 
+function updateUserInfo(uid, name, surn, description){
+
+}
+
+function getUserInfo(uid, name, surn, description){
+
+}
+
 function initApp(){
 
     changeToProf();
