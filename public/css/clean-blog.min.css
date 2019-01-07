@@ -177,7 +177,7 @@ input[type=submit], input[type=button] {
 /* Style the container */
 .container2 {
   border-radius: 5px;
-  padding: 20px;
+  padding: 0px;
 }
 
 /* Floating column for labels: 25% width */
@@ -197,7 +197,8 @@ input[type=submit], input[type=button] {
 .col-75 p{
   float: left;
   width: 40%;
-  margin-top: 15px;
+  margin-top: 25px;
+  margin-left: 30px;
 }
 
 /* Clear floats after the columns */
