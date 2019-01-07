@@ -12,10 +12,22 @@ function changeToProf(){
     prof_form = document.getElementById("profile_form");
     edit_form = document.getElementById("edit_form");
 
-    edit_form.style.display = "none";
     prof_form.style.display = "block";
+    edit_form.style.display = "none";
 }
 
+function manageProfile(){
+    changeToProf();
+
+    document.getElementById("change_to_prof").addEventListener('click', e => {
+        changeToProf();
+    });
+
+    document.getElementById("change_to_edit").addEventListener('click', e => {
+        changeToEdit();
+    });
+
+}
 
 function initApp(){
     //Listener para AuthStateChanged
@@ -49,6 +61,7 @@ function initApp(){
        else {
             console.log("Not logged in");
             nonSignedDisplay();
+            window.location = 'index.html';
        }
 
     });
@@ -58,5 +71,6 @@ function initApp(){
 
 window.onload = function() {
     initApp();
+    manageProfile();
 };
 
