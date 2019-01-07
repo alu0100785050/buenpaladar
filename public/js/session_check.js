@@ -26,7 +26,7 @@ function initApp(){
        else {
             console.log("Not logged in");
             log_butt.innerHTML = "Log In";
-            prof_butt.style.visibility = "hidden";
+            //prof_butt.style.visibility = "hidden";
        }
     });
 }
