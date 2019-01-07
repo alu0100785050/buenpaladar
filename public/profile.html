@@ -69,7 +69,7 @@
                       <label for="nombre">Nombre:</label>
                     </div>
                     <div class="col-75">
-                      <p>Nombre</p>
+                      <p id="prof_name">Nombre</p>
                     </div>
                   </div>
                   <div class="row2">
@@ -77,7 +77,7 @@
                       <label for="apellidos">Apellidos:</label>
                     </div>
                     <div class="col-75">
-                      <p>Apellidos</p>
+                      <p id="prof_surn">Apellidos</p>
                     </div>
                   </div>
                   <div class="row2">
@@ -85,7 +85,7 @@
                       <label for="email">Email:</label>
                     </div>
                     <div class="col-75">
-                      <p>Email</p>
+                      <p id="orof_email">Email</p>
                     </div>
                   </div>
                   <div class="row2">
@@ -93,7 +93,7 @@
                       <label for="email">Descripción:</label>
                     </div>
                     <div class="col-75">
-                      <p>Email</p>
+                      <p id="prof_description">Maravillosa y apasionante descripción</p>
                     </div>
                   </div>
                   <div class="row2">
@@ -115,7 +115,7 @@
                       <label for="nombre">Nombre</label>
                     </div>
                     <div class="col-75">
-                      <input type="text" id="nombre" placeholder="Nombre...">
+                      <input type="text" id="name" placeholder="Nombre...">
                     </div>
                   </div>
                   <div class="row2">
@@ -123,7 +123,7 @@
                       <label for="apellidos">Apellidos</label>
                     </div>
                     <div class="col-75">
-                      <input type="text" id="apellidos" placeholder="Apellidos...">
+                      <input type="text" id="surn" placeholder="Apellidos...">
                     </div>
                   </div>
                   <div class="row2">
@@ -203,9 +203,6 @@
     <script src="js/firebase_int.js">
     </script>
 
-    <!-- JQuery-->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -213,7 +210,7 @@
     <!-- Custom scripts for this template -->
     <script src="js/clean-blog.min.js"></script>
     <script type="text/javascript" src="js/menuresponsive.js"></script>
-    <script src="js/session_check.js"></script>
+    <script type="text/javascript" src="js/session_utils.js"></script>
     <script type="text/javascript" src="js/profile.js"></script>
 
   </body>
