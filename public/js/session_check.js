@@ -34,7 +34,9 @@ function initApp(){
             log_butt.addEventListener('click', e => {
                 //When user is logged in, clicking button redirects to self
                 // plus logout
-                firebase.auth().signOut();
+                firebase.auth().signOut().then(function(){
+                    location.reload();
+                });
 
             });
        }
