@@ -220,6 +220,9 @@ input[type=submit], input[type=button] {
    .col-75{
    	width:70%;
    }
+   .col-75 p {
+   	width: 50%;
+   }
 } 
 
 .avatar {
