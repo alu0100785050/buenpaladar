@@ -35,7 +35,7 @@ function initApp(){
                 //When user is logged in, clicking button redirects to self
                 // plus logout
                 firebase.auth().signOut().then(function(){
-                    location.reload();
+                    window.location = "index.html"
                 });
 
             });
