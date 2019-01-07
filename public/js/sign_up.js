@@ -62,13 +62,9 @@ function initApp() {
 
     firebase.auth().onAuthStateChanged(function(user){
 
-        //Manage visible spaces
-        //document getElementById()
+        //If logged in -> redirect
         if(user){
-
-        }
-        else{
-
+            window.location = 'index.html';
         }
     });
 

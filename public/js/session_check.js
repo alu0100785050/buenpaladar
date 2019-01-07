@@ -3,8 +3,10 @@ function initApp(){
     firebase.auth().onAuthStateChanged(function(user) {
        console.log(user);
        log_butt = document.getElementById("login_button");
+       prof_butt = document.getElementById("profile_button");
+
        if (user) {
-            console.log("Success!");
+
             var displayName = user.displayName;
             var email = user.email;
             var uid = user.uid;
@@ -24,6 +26,7 @@ function initApp(){
        else {
             console.log("Not logged in");
             log_butt.innerHTML = "Log In";
+            prof_butt.style.visibility = "hidden";
        }
     });
 }
