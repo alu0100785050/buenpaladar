@@ -54,7 +54,8 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
                <div class="container2">
-                <form>
+
+                <form id="profile_form">
                   <div class="row2">
                     <div class="col-25">
                       <label for="foto">Foto</label>
@@ -96,9 +97,57 @@
                     </div>
                   </div>
                   <div class="row2">
-                    <input type="button" value="Editar" onclick="location.href='profile-edit.html';"/>
+                    <input type="button" value="Editar" id="change_to_edit"/>
                   </div>
                 </form>
+
+                <form id="edit_form">
+                  <div class="row2">
+                    <div class="col-25">
+                      <label for="foto">Foto</label>
+                    </div>
+                    <div class="col-75">
+                       <img src="img/avatar.jpg" alt="Avatar" class="avatar">
+                    </div>
+                  </div>
+                  <div class="row2">
+                    <div class="col-25">
+                      <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="nombre" placeholder="Nombre...">
+                    </div>
+                  </div>
+                  <div class="row2">
+                    <div class="col-25">
+                      <label for="apellidos">Apellidos</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="apellidos" placeholder="Apellidos...">
+                    </div>
+                  </div>
+                  <div class="row2">
+                    <div class="col-25">
+                      <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="email" placeholder="Email...">
+                    </div>
+                  </div>
+                  <div class="row2">
+                    <div class="col-25">
+                      <label for="email">Descripción</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="descripcion" placeholder="Descripción...">
+                    </div>
+                  </div>
+                  <div class="row2">
+                    <input type="submit" value="Guardar" id="change_to_prof"/>
+                  </div>
+                </form>
+
+
               </div> 
             </div>
           </div>
@@ -146,6 +195,14 @@
       </div>
     </footer>
 
+    <!-- Firebase integration -->
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-database.js">
+    </script>
+    <script src="js/firebase_int.js">
+    </script>
+
     <!-- JQuery-->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 
@@ -156,6 +213,7 @@
     <!-- Custom scripts for this template -->
     <script src="js/clean-blog.min.js"></script>
     <script type="text/javascript" src="js/menuresponsive.js"></script>
+    <script src="js/session_check.js"></script>
     <script type="text/javascript" src="js/profile.js"></script>
 
   </body>
