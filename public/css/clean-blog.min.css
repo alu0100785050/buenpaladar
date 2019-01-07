@@ -191,7 +191,13 @@ input[type=submit], input[type=button] {
 .col-75 {
   float: left;
   width: 40%;
-  margin-top: 6px;
+  margin-top: 15px;
+}
+
+.col-75 p{
+  float: left;
+  width: 40%;
+  margin-top: 15px;
 }
 
 /* Clear floats after the columns */
