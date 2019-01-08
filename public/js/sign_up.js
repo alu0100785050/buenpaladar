@@ -10,17 +10,17 @@ function checkpasswd(password, checkpass){
 
 function sign(){
 
-    //var name = document.getElementById("name");
-    //var surn = document.getElementById("surn");
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
-    var checkpass = document.getElementById("checkpass").value;
+    var name = document.getElementById("name");
+    var surn = document.getElementById("sur");
+    var email = document.getElementById("email");
+    var password = document.getElementById("password");
+    var checkpass = document.getElementById("checkpass");
 
-    if(checkpasswd(checkpass, password)){
-            if(validateEmail(email)){
+    if(checkpasswd(checkpass.value, password.value)){
+            if(validateEmail(email.value)){
                 //Signup + error management
                 //ALSO: auto-error handling includes email repetition in the database (i think)
-                firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error){
+                firebase.auth().createUserWithEmailAndPassword(email.value, password.value).catch(function(error){
                     var errorCode = error.code;
                     var errorMessage = error.message;
 
@@ -52,19 +52,42 @@ function sign(){
 
 }
 
-firebase.auth().onAuthStateChanged(function(user){
-    if(user){
-        window.location = 'index.html';
-    }
-});
-
 function initApp() {
 
     firebase.auth().onAuthStateChanged(function(user){
 
         //If logged in -> redirect
         if(user){
-            window.location = 'index.html';
+
+            var name = document.getElementById("name");
+            var surn = document.getElementById("sur");
+            var email = document.getElementById("email");
+            var password = document.getElementById("password");
+            var checkpass = document.getElementById("checkpass");
+
+            user.updateProfile({
+
+                displayName: name.value
+
+            }).then(function() {
+                console.log(name.value);
+                database.ref('users/' + name.value).set({
+                    //data
+                    surName:        surn.value,
+                    desCription:    ""
+                }).then(function(){
+                    console.log("Success!");
+
+                    //Give time to asynchronous calls to end for safety
+                    setTimeout(function(){
+                        window.location = 'index.html';
+                    }, 3000);
+                });
+            }).catch(function(error) {
+              console.error(error);
+            });
+
+
         }
     });
 

@@ -14,7 +14,7 @@ const settings = {/* your settings... */ timestampsInSnapshots: true};
 firestore.settings(settings);
 
 var db = firebase.firestore();
+var database = firebase.database();
 
 allCookies = document.cookies;
-
 console.log(allCookies);
