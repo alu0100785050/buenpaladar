@@ -1,4 +1,4 @@
-function changeToEdit(){
+function changeToEdit(uid){
     prof_form = document.getElementById("profile_form");
     edit_form = document.getElementById("edit_form");
 
@@ -7,24 +7,55 @@ function changeToEdit(){
 
 }
 
-function changeToProf(){
+function changeToProf(uid){
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var surn = document.getElementById("surn").value;
+    var description = document.getElementById("descripcion").value;
+
+    //Check len, etc...
+
+    var data = {
+        displayName : name,
+        eMail : email,
+        surName: surn,
+        desCription: description
+    }
+
+    var newUserInfo = db.collection(uid).doc();
+
+    newUserInfo.set(data).then(function(){
+
+        console.log("Success!");
+
+        prof_form = document.getElementById("profile_form");
+        edit_form = document.getElementById("edit_form");
+
+        prof_form.style.display = "block";
+        edit_form.style.display = "none";
+
+    }).catch(function(error){
+        console.error("Error setting document: ", error);
+    });
+    //then
+
+}
+
+function manageProfile(uid){
 
     prof_form = document.getElementById("profile_form");
     edit_form = document.getElementById("edit_form");
 
     prof_form.style.display = "block";
     edit_form.style.display = "none";
-}
-
-function manageProfile(){
-    changeToProf();
 
     document.getElementById("change_to_prof").addEventListener('click', e => {
-        changeToProf();
+        changeToProf(uid);
     });
 
     document.getElementById("change_to_edit").addEventListener('click', e => {
-        changeToEdit();
+        changeToEdit(uid);
     });
 
 }
@@ -56,7 +87,7 @@ function initApp(){
 
             });
 
-            //initProf();
+            manageProfile(uid);
        }
        else {
             console.log("Not logged in");
@@ -71,6 +102,5 @@ function initApp(){
 
 window.onload = function() {
     initApp();
-    manageProfile();
 };
 

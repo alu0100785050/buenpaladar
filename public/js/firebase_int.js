@@ -9,6 +9,8 @@ var config = {
 
 firebase.initializeApp(config);
 
+var db = firebase.firestore();
+
 allCookies = document.cookies;
 
 console.log(allCookies);
