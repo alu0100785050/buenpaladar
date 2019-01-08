@@ -1,71 +1,13 @@
-function changeToEdit(uid){
-    prof_form = document.getElementById("profile_form");
-    edit_form = document.getElementById("edit_form");
-
-    edit_form.style.display = "block";
-    prof_form.style.display = "none";
-
-}
-
-function changeToProf(uid){
-
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var surn = document.getElementById("surn").value;
-    var description = document.getElementById("descripcion").value;
-
-    //Check len, etc...
-
-    var data = {
-        displayName : name,
-        eMail : email,
-        surName: surn,
-        desCription: description
-    }
-
-    var newUserInfo = db.collection(uid).doc();
-
-    newUserInfo.set(data).then(function(){
-
-        console.log("Success!");
-
-        prof_form = document.getElementById("profile_form");
-        edit_form = document.getElementById("edit_form");
-
-        prof_form.style.display = "block";
-        edit_form.style.display = "none";
-
-    }).catch(function(error){
-        console.error("Error setting document: ", error);
-    });
-    //then
-
-}
-
-function manageProfile(uid){
-
-    prof_form = document.getElementById("profile_form");
-    edit_form = document.getElementById("edit_form");
-
-    prof_form.style.display = "block";
-    edit_form.style.display = "none";
-
-    document.getElementById("change_to_prof").addEventListener('click', e => {
-        changeToProf(uid);
-    });
-
-    document.getElementById("change_to_edit").addEventListener('click', e => {
-        changeToEdit(uid);
-    });
-
-}
-
 function initApp(){
     //Listener para AuthStateChanged
     firebase.auth().onAuthStateChanged(function(user) {
-       console.log(user);
 
        if (user) {
+
+            var prof_name = document.getElementById("prof_name");
+            var prof_surn = document.getElementById("prof_surn");
+            var prof_mail = document.getElementById("prof_email");
+            var prof_desc = document.getElementById("prof_description");
 
             log_butt = document.getElementById("login_button");
             var displayName = user.displayName;
@@ -77,6 +19,13 @@ function initApp(){
             console.log(email);
 
             SignedDisplay();
+            prof_name.innerHTML = displayName;
+            prof_mail.innerHTML = email;
+
+            database.ref('/users/' + displayName).once('value').then(function(snapshot) {
+                prof_surn.innerHTML = (snapshot.val() && snapshot.val().surName) || '--';
+                prof_desc.innerHTML = (snapshot.val() && snapshot.val().desCription) || '--';
+            });
 
             log_butt.addEventListener('click', e => {
                 //When user is logged in, clicking button redirects to self
@@ -87,17 +36,12 @@ function initApp(){
 
             });
 
-            manageProfile(uid);
        }
        else {
             console.log("Not logged in");
-            nonSignedDisplay();
-            window.location = 'index.html';
+            window.location = 'login.html';
        }
-
     });
-
-
 }
 
 window.onload = function() {
