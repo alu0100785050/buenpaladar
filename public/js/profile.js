@@ -1,8 +1,10 @@
 function changeToEdit(){
+
      var edit_surn = document.getElementById("edit_surn"); //
      var prof_surn = document.getElementById("prof_surn"); //
      var edit_desc = document.getElementById("edit_description"); //
      var prof_desc = document.getElementById("prof_description"); //
+
 
      save_butt = document.getElementById("change_to_prof"); //
      edit_butt = document.getElementById("change_to_edit"); //
@@ -15,25 +17,47 @@ function changeToEdit(){
      prof_desc.style.display = "none";
      edit_butt.style.display = "none";
 
+
 }
 
 function changeToProf(){
+
+    displayName = firebase.auth().currentUser.displayName;
+
     var edit_surn = document.getElementById("edit_surn"); //
     var prof_surn = document.getElementById("prof_surn"); //
     var edit_desc = document.getElementById("edit_description"); //
     var prof_desc = document.getElementById("prof_description"); //
 
-    save_butt = document.getElementById("change_to_prof"); //
-    edit_butt = document.getElementById("change_to_edit"); //
+    if(edit_surn.value !== "" && edit_desc.value !== ""){
+        database.ref('users/' + displayName).set({
+           surName:    edit_surn.value,
+           desCription:edit_desc.value
+        }).then(function (){
+            database.ref('/users/' + displayName).once('value').then(function(snapshot) {
 
-    edit_surn.style.display = "none";
-    edit_desc.style.display = "none";
-    save_butt.style.display = "none";
+                //Snapshot
+                prof_surn.innerHTML = (snapshot.val() && snapshot.val().surName) || '--';
+                prof_desc.innerHTML = (snapshot.val() && snapshot.val().desCription) || '--';
 
-    prof_surn.style.display = "block";
-    prof_desc.style.display = "block";
-    edit_butt.style.display = "block";
+                save_butt = document.getElementById("change_to_prof"); //
+                edit_butt = document.getElementById("change_to_edit"); //
 
+                edit_surn.style.display = "none";
+                edit_desc.style.display = "none";
+                save_butt.style.display = "none";
+
+                prof_surn.style.display = "block";
+                prof_desc.style.display = "block";
+                edit_butt.style.display = "block";
+
+            });
+        });
+
+    }
+    else{
+        alert("No deje campos sin rellenar");
+    }
 }
 
 function initApp(){
