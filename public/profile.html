@@ -22,6 +22,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/profile-styles.css" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131695398-1"></script>
@@ -78,6 +79,7 @@
                     </div>
                     <div class="col-75">
                       <p id="prof_surn"></p>
+                      <input id="edit_surn"/>
                     </div>
                   </div>
                   <div class="row2">
@@ -94,8 +96,11 @@
                     </div>
                     <div class="col-75">
                       <p id="prof_description">Maravillosa y apasionante descripción</p>
+                      <input id="edit_description"/>
                     </div>
                   </div>
+                  <input type="button" value="Editar" id="change_to_edit" onclick="changeToEdit()"/>
+                  <input type="button" value="Guardar" id="change_to_prof" onclick="changeToProf()"/>
                 </form>
 
               </div> 
